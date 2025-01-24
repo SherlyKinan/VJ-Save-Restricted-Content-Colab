@@ -36,7 +36,7 @@ async def downstatus(client: Client, statusfile, message):
             await client.edit_message_text(message.chat.id, message.id, f"Downloaded : {txt}")
             await asyncio.sleep(10)
         except:
-            await asyncio.sleep(5)
+            await asyncio.sleep(5000)
 
 
 # upload status
@@ -53,7 +53,7 @@ async def upstatus(client: Client, statusfile, message):
             await client.edit_message_text(message.chat.id, message.id, f"Uploaded : {txt}")
             await asyncio.sleep(10)
         except:
-            await asyncio.sleep(5)
+            await asyncio.sleep(5000)
 
 
 # progress writer
